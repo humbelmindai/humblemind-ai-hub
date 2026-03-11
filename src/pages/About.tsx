@@ -44,18 +44,18 @@ const About = () => {
     <section className="pt-32 pb-20 relative">
       <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,hsl(280_60%_55%/0.08),transparent_60%)]" />
       <div className="container px-4 md:px-8 relative z-10">
-        <motion.div className="max-w-3xl mx-auto text-center" initial="hidden" animate="visible">
-          <motion.span variants={fadeUp} custom={0} className="inline-block px-4 py-1.5 rounded-full text-xs font-semibold bg-gradient-brand text-primary-foreground mb-6">
+        <div className="max-w-3xl mx-auto text-center">
+          <span data-about-hero className="inline-block px-4 py-1.5 rounded-full text-xs font-semibold bg-gradient-brand text-primary-foreground mb-6">
             Our Story
-          </motion.span>
-          <motion.h1 variants={fadeUp} custom={1} className="font-display text-4xl md:text-6xl font-bold mb-6">
+          </span>
+          <h1 data-about-hero className="font-display text-4xl md:text-6xl font-bold mb-6">
             Building the <span className="text-gradient">Future of AI</span> With Humility
-          </motion.h1>
-          <motion.p variants={fadeUp} custom={2} className="text-lg text-muted-foreground leading-relaxed">
+          </h1>
+          <p data-about-hero className="text-lg text-muted-foreground leading-relaxed">
             HumbleMind AI Labs was born from a simple belief: every business deserves access to powerful, 
             private AI — without the complexity, cost, or compromise of traditional enterprise solutions.
-          </motion.p>
-        </motion.div>
+          </p>
+        </div>
       </div>
     </section>
 
