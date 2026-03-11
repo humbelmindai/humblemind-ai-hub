@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { Search, Bot, MessageSquare, BarChart3, FileText, ShoppingCart, HeadphonesIcon, Mail, Calendar, Database, Brain, Code, Megaphone, Truck, Heart, Briefcase, GraduationCap, Shield, Camera, Music, Utensils, Home, Plane, Wrench, Palette, Scale, Stethoscope, Landmark, Leaf, Gamepad2, Car, Smartphone } from "lucide-react";
+import { Search, Bot, MessageSquare, BarChart3, FileText, ShoppingCart, HeadphonesIcon, Mail, Calendar, Database, Brain, Code, Megaphone, Truck, Heart, Briefcase, GraduationCap, Shield, Camera, Music, Utensils, Home, Plane, Wrench, Palette, Scale, Stethoscope, Landmark, Leaf, Gamepad2, Car, Smartphone, Users } from "lucide-react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 
