@@ -6,6 +6,8 @@ import logoHorizontal from "@/assets/logo-horizontal.png";
 const navLinks = [
   { label: "Home", path: "/" },
   { label: "Agents", path: "/agents" },
+  { label: "DIY Plan", path: "/plans/diy" },
+  { label: "Managed Plan", path: "/plans/managed" },
   { label: "About", path: "/about" },
 ];
 
