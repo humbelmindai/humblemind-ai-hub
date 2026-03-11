@@ -20,8 +20,24 @@ const values = [
   { icon: Lightbulb, title: "Transparency", desc: "No black boxes. We believe in open, understandable AI that businesses can trust and verify." },
 ];
 
-const About = () => (
-  <div className="min-h-screen bg-background">
+const About = () => {
+  const valuesRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    const ctx = gsap.context(() => {
+      gsap.from("[data-about-hero]", {
+        y: 40, opacity: 0, stagger: 0.12, duration: 0.8, ease: "power3.out",
+      });
+      gsap.from("[data-value-card]", {
+        scrollTrigger: { trigger: valuesRef.current, start: "top 80%" },
+        y: 30, opacity: 0, stagger: 0.1, duration: 0.5, ease: "power2.out",
+      });
+    });
+    return () => ctx.revert();
+  }, []);
+
+  return (
+  <div className="min-h-screen bg-background pb-20 md:pb-0">
     <Navbar />
 
     {/* Hero */}
