@@ -1,7 +1,12 @@
-import { motion } from "framer-motion";
+import { useEffect, useRef } from "react";
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { Heart, Target, Eye, Lightbulb, Shield, Users } from "lucide-react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import MobileNav from "@/components/MobileNav";
+
+gsap.registerPlugin(ScrollTrigger);
 
 const fadeUp = {
   hidden: { opacity: 0, y: 30 },
